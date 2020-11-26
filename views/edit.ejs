@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST APP</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="header-logo">LIST</a>
+    </header>
+    <div class="container">
+        <div class="container-header">
+            <h1>Edit Item</h1>
+            <a href="/index" class="cancel-button">Batal</a>
+        </div>
+        <div class="item-form-wrapper">
+            <p class="item-form-wrapper">Item</p>
+            <form action="/update/<%= item.id %>" method="POST">
+                <input type="text" name="itemName" value="<%=item.name%>">
+                <input type="submit" value="Perbarui">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
